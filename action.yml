@@ -1,0 +1,21 @@
+name: 'get_code_scanning_result'
+description: 'Get code scanning result to csv'
+inputs: 
+  github_token:
+    description: 'The GitHub_Token secret'
+    required: true
+  
+  repo_owner:
+     description: 'The owner of the repository'
+     required: true
+     default: ${{ github.repository_owner }}
+  
+  repository_name:
+     description: 'The repository name'
+     required: true
+     default: ${{ github.event.repository.name }}
+  
+runs:
+  using: 'node12'
+  main: 'getcodescanning.js'
+  

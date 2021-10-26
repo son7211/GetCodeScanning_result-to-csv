@@ -1,0 +1,28 @@
+{
+  "name": "GetCodeScanning",
+  "version": "1.0.0",
+  "description": "This is simple GitHub Action which gets GitHub Advanced Security - Code Scanning results to JSON.",
+  "main": "getcodescanning.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/son7211/GetCodeScanning.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/son7211/GetCodeScanning/issues"
+  },
+  "homepage": "https://github.com/son7211/GetCodeScanning#readme",
+  "dependencies": {
+    "@actions/core": "^1.6.0",
+    "@actions/github": "^5.0.0",
+    "@octokit/core": "^3.5.1",
+    "@octokit/plugin-paginate-rest": "^2.17.0",
+    "@octokit/rest": "^18.12.0",
+    "json2csv": "^5.0.6"
+  }
+}
