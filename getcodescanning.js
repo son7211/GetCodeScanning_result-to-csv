@@ -19,10 +19,7 @@ const octokit = new MyOctokit({
 
 const fields = ['number', 'created_at', 'html_url', 'state', 'dismissed_by', 'dismissed_reason', 'rule', 'tool'];
 
-//const fields = ['id', 'name', 'description', 'url', 'created_at', 'updated_at', 'state', 'severity', 'resolved_at', 'resolved_by', 'resolved_by_user', 'resolved_by_user_url', 'resolved_by_user_login', 'resolved_by_user_type', 'resolved_by_user_site_admin'];
-
 const opts = { fields };
-//const transformOpts = { highWaterMark: 8192 };
 
 async function getCodeScanning() {
 
