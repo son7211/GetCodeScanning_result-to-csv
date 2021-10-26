@@ -8,7 +8,6 @@ This is simple GitHub Action which gets GitHub Advanced Security - Code Scanning
 Usage:
   
   uses : son7211/GetCodeScanning@main
-  #with :
-  //  repo_owner: $ {{ github.repository_owner }}
-  //  repository_name: $ {{ github.repository }}
+  with :
+    github_token: ${{ secrets.GITHUB_TOKEN }}
 
