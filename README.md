@@ -10,7 +10,7 @@ This is simple GitHub Action which gets GitHub Advanced Security - Code Scanning
 Usage:
 
  ``` 
-  uses : son7211/GetCodeScanning@main
+  uses : son7211/GetCodeScanning_result-to-csv@main
   with :
     github_token: ${{ secrets.GITHUB_TOKEN }}
  ```
