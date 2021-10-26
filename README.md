@@ -10,7 +10,13 @@ This is simple GitHub Action which gets GitHub Advanced Security - Code Scanning
 Usage:
 
  ``` 
-  uses : son7211/GetCodeScanning_result-to-csv@master
-  with :
-    github_token: ${{ secrets.GITHUB_TOKEN }}
+  - uses : son7211/GetCodeScanning_result-to-csv@master
+    with :
+      github_token: ${{ secrets.GITHUB_TOKEN }}
+
+   - name: upload 
+       uses: actions/upload-artifact@v2
+       with:
+          name: file
+          path: result.csv  
  ```
