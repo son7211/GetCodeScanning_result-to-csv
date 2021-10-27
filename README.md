@@ -1,6 +1,6 @@
 # GetCodeScanning
 
-This is simple GitHub Action which gets GitHub Advanced Security - Code Scanning results to JSON. 
+This is simple GitHub Action which gets GitHub Advanced Security - Code Scanning results to CSV using popular Nodejs [`json2csv`](https://www.npmjs.com/package/json2csv)
 
 - Require `GITHUB_TOKEN` which is automatically generated
 - `GITHUB_TOKEN` should have `read` permission for `security`
